@@ -11,33 +11,33 @@ Install the necessary packages by running the following command:
 Set up your OpenAI API key by assigning it to the OPENAI_API_KEY environment variable.
 
 ### Usage
-Import the required modules and set up the necessary configurations.
+1. Import the required modules and set up the necessary configurations.
 
-Define the user_input object that holds the user's phone number and message.
+2. Define the user_input object that holds the user's phone number and message.
 
-Set the OpenAI API key using openai.api_key.
+3. Set the OpenAI API key using openai.api_key.
 
-Define the /incomingMessage endpoint as a POST request handler in Quart.
+4. Define the /incomingMessage endpoint as a POST request handler in Quart.
 
-Inside the incoming_message function, retrieve the user's input from the request body and update the user_input object.
+5. Inside the incoming_message function, retrieve the user's input from the request body and update the user_input object.
 
-If the user's message is "Hi", generate a response from the chatbot as a user greeting. Otherwise, proceed with mocking the API response.
+6. If the user's message is "Hi", generate a response from the chatbot as a user greeting. Otherwise, proceed with mocking the API response.
 
-When mocking the API response, create a mock object to simulate the API response with desired attributes such as choices and status_code.
+7. When mocking the API response, create a mock object to simulate the API response with desired attributes such as choices and status_code.
 
-Use the mock.patch context manager to patch the openai.Completion.create method and return the mock response.
+8. Use the mock.patch context manager to patch the openai.Completion.create method and return the mock response.
 
-Call the incoming_message_mock function to generate the response based on the mocked API call.
+9. Call the incoming_message_mock function to generate the response based on the mocked API call.
 
-Extract the generated response from the mocked API response.
+10. Extract the generated response from the mocked API response.
 
-Return the response and the status code in the JSON format.
+11. Return the response and the status code in the JSON format.
 
-Define the incoming_message_mock function that handles the mocked API call using openai.Completion.create. It generates a response based on the provided input and returns the response text and status code.
+12. Define the incoming_message_mock function that handles the mocked API call using openai.Completion.create. It generates a response based on the provided input and returns the response text and status code.
 
-Define the main function to start the Quart application.
+13. Define the main function to start the Quart application.
 
-Run the application by executing the main function.
+14. Run the application by executing the main function.
 
 ### Endpoint
 The API exposes the following endpoint:
