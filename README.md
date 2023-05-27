@@ -58,6 +58,3 @@ Mocking the API
 The code includes a mocking functionality for testing purposes. The API call to openai.Completion.create is intercepted and replaced with a mock response. The mock response is configured with a predefined response text and a status code. To use the actual OpenAI API, you can replace the mocked code with the original API call.
 
 Ensure that you use the mocking functionality responsibly and respect OpenAI's terms of use.
-
-Conclusion
-The provided code allows you to create a Python backend for a text completion chatbot API using
