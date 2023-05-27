@@ -1,0 +1,17 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "BharatX Chatbot (no auth)",
+  "name_for_model": "text-davinci-003",
+  "description_for_human": "Chatbot for interacting with BharatX website users.",
+  "description_for_model": "Chatbot for interacting with BharatX website users.",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "PLUGIN_HOSTNAME/openapi.yaml"
+  },
+  "logo_url": "PLUGIN_HOSTNAME/logo.png",
+  "contact_email": "support@example.com",
+  "legal_info_url": "https://example.com/legal"
+}
